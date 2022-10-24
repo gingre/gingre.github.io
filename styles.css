@@ -1,11 +1,20 @@
-<style>
-body 
-{
-background-image: url("pizza1.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size:100% 100%;
-}
-</style>
+body {
 
-<body style="color:white;">
+background-image: url("pizza1.jpg");
+
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
+background-size:100% 100%;
+
+}
+
+body {
+
+color:white
+}
+
+td.ColColor {
+background-color: green;
+}
