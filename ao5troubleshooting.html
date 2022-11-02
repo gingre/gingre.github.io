@@ -1,0 +1,113 @@
+<!-- Rowan Ging 10/24/2022 IT 105:01 Assignment 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IT 105:01 Assignment 5</title>
+
+<link rel="stylesheet" href="styless.css">
+
+</head>
+<body bgcolor="#00FFAA">
+
+<center>
+<u><H1>IT 105:01 Principles of Programming</H1></u>
+<p><font size="+1"><strong>Assignment 5 - HTML Forms with CSS</strong></font></p>
+</center>
+
+<form>
+
+<font size="+2"><i>Welcome to Jun-izza, where we combine both Juniata and Pizza!</font></i>
+<H2>Customer Information</H2>
+
+<table>
+<table border=2>
+<form>
+<table style=background-color:green;">
+	<tr>
+		<td>
+		<label for="First Name">
+		First Name
+		</label>
+		</td>
+		<td><input type="text" id="First Name"/>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="Last Name">
+		Last Name
+		</label>
+		</td>
+		<td><input type="Last Name" id="Last Name" />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="Phone Number">
+		Phone Number
+		</label>
+		</td>
+		<td><input type="Phone Number" id="Phone Number" />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="Street Address">
+		Street Address
+		</label>
+		</td>
+		<td><input type="Street Address" id="Street Address" />
+		</td>
+	</tr>
+</form>
+</table>
+
+<H2>Pizza Size</H2>
+
+<label for "Pizza Size">Choose a Pizza Size:</label>
+<select name="Pizza Size" id="Pizza Size">
+<option value="Mini">Mini</option>
+<option value="Small">Small</option>
+<option value="Medium">Medium</option>
+<option value="Large">Large</option>
+<option value="Extra Large">Extra Large</option>
+<option value="Biggest We Can Possibly Make">Biggest We Can Possibly Make</option>
+</select>
+
+<H2>Crust Style</H2>
+
+<input type="radio" id="Thin (wrong)" name="Crust Style" value="Thin (wrong)">
+<label for="Thin (wrong)">Thin (wrong)</label><br>
+<input type="radio" id="Hand Tossed (better...)" name="Crust Style" value="Hand Tossed (better...)">
+<label for="Hand Tossed (better...)">Hand Tossed (better...)</label><br>
+<input type="radio" id="Deep Dish (the only correct choice)" name="Crust Style" value="Deep Dish (the only correct choice)">
+<label for="Deep Dish (the only correct choice)">Deep Dish (the only correct choice)</label>
+	
+<H2>Toppings</H2>
+
+<input type=checkbox name="Pepperoni" value="Pepperoni">Pepperoni (yuck)<br>
+<input type=checkbox name="Mushroom" value="Mushroom">Mushroom (ehh)<br>
+<input type=checkbox name="Extra Cheese" value="Extra Cheese">Extra Cheese (delicious)<br>
+<input type=checkbox name="Sasuage" value="Sasuage">Sasuage (yuck)<br>
+<input type=checkbox name="Onion" value="Onion">Onion (yuck)<br>
+<input type=checkbox name="Black Olives" value="Black Olives">Black Olives (delicious)<br>
+<input type=checkbox name="Green Pepper" value="Green Pepper">Green Pepper (delicious)<br>
+<input type=checkbox name="Fresh Garlic" value="Fresh Garlic">Fresh Garlic (hope you aren't a vampire)		
+
+<H2>Delivery Options</H2>
+
+<input type="radio" id="Delivery" name="Delivery Options" value="Delivery">
+<label for="Delivery">Delivery</label><br>
+<input type="radio" id="Pick Up" name="Delivery Options" value="Pick Up">
+<label for="Pick Up">Pick Up</label><br>
+<input type="radio" id="Dine In" name="Delivery Options" value="Dine In">
+<label for="Dine In">Dine In</label><br>
+<br>
+
+<textarea name="Comments" Rows=5 Cols=40 style=background-color:green;">
+Enter any specific requests, comments, or driving instructions here. Thanks and enjoy your pizza!!
+</textarea><br>
+
+<button type="button">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+</form>
+
+</body>
+</html>
