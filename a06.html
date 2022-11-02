@@ -11,6 +11,20 @@ alert ("ME TOO!!!");
 }
 </script>
 
+<script>
+         function glue()
+         {
+           document.querySelector("#full").value = 
+               document.querySelector("#first").value
+             + " "
+             + document.querySelector("#last").value
+         }
+         function hey()
+         {
+           document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector("#first").value;
+         }
+      </script>
+
 </head>
 <body bgcolor="#00FFAA">
 
@@ -25,7 +39,16 @@ alert ("ME TOO!!!");
 so we can put you in our system!</font></i>
 <br>
 
-
+<form name=inclass>
+        First: <input type=text id="first" onchange="hey();"><br>
+        Last:  <input type=text id="last" 
+                          onchange="glue();"><br>
+        Full:  <input type=text id="full"><br>
+        <input type=reset value="clear entries">
+      </form>
+      <div id=changeText>
+      Here is some text.
+      </div>
 
 <H3>What department(s) do you belong to?</H3>
 
