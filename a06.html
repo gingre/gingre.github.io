@@ -4,6 +4,13 @@
 <head>
 <title>IT 105:01 Assignment 5</title>
 
+<script>
+function choice ()
+{
+alert ("The best POE");
+}
+</script>
+
 </head>
 <body bgcolor="#00FFAA">
 
@@ -14,16 +21,18 @@
 
 <form>
 
-<font size="+2"><i>Welcome to Department Registration. Please anter your information 
+<font size="+2"><i>Welcome to Department Registration. Please enter your information 
 so we can put you in our system!</font></i>
 <br>
+
+
 
 <H3>What department(s) do you belong to?</H3>
 
 <form name=a06>
 <input type=checkbox>Accounting, Business, Economics<br>
 <input type=checkbox>Chemistry<br>
-<input type=checkbox>Environmental Science<br>
+<input type=checkbox onclick="choice();">Environmental Science<br>
 <input type=checkbox>History<br>
 </form>
 
@@ -35,9 +44,7 @@ so we can put you in our system!</font></i>
 
 
 
-<button type="button">Submit</button>
-<button type="reset" value="Reset">Reset</button>
-</form>
+
 
 </body>
 </html>
