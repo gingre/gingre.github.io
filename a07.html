@@ -59,18 +59,32 @@ var bgToggle=true;
 
 
 <script>
-        function add()
+	function add()
         {
           document.querySelector("#full").value
          = parseFloat(document.querySelector("#first").value)
          + parseFloat(document.querySelector("#second").value); 
         }
   
-        function subtract()
+	function subtract()
         {
           document.querySelector("#full").value
          = parseFloat(document.querySelector("#first").value)
-         + parseFloat(document.querySelector("#second").value); 
+         - parseFloat(document.querySelector("#second").value); 
+        }
+
+	function multiply()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         * parseFloat(document.querySelector("#second").value); 
+        }
+
+	function divide()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         / parseFloat(document.querySelector("#second").value); 
         }
 </script>
 
@@ -120,6 +134,8 @@ var bgToggle=true;
 <input type=text id="first">
 <input type=button value="Addtion, +" onclick="add();">
 <input type=button value="Subtraction, -" onclick="subtract();">
+<input type=button value="Multiplication, *" onclick="subtract();">
+<input type=button value="Division, /" onclick="subtract();">
 <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
 <input type=text id="full"><br><br>
 
