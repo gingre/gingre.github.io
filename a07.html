@@ -87,7 +87,7 @@ var bgToggle=true;
 
 	function doSum()
         
-           var sum=parseInt( document.querySelector("#R").value);
+           var sum=parseInt( document.querySelector("#M").value);
            var N = parseInt( document.querySelector("#N").value );
            for (i=1; i<=N; i++) {
              sum += i;
@@ -124,9 +124,9 @@ var bgToggle=true;
 
 
 <H3>Summation</H3>
-Enter an integer to start the summation: <input type=text id="#R"><br>
+Enter an integer to start the summation: <input type=text id="M"><br>
 
-Enter an integer to end the summation: <input type=text id="#N"><br>
+Enter an integer to end the summation: <input type=text id="N"><br>
 
 <input type=button value="Start the Sum" onclick="doSum();">
 
