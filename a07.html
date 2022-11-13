@@ -32,6 +32,34 @@ var bgToggle=true;
         }
 </script>
 
+<script>
+var bgToggle=true;
+        function makeBlue()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="blue";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+</script>
+
+<script>
+var bgToggle=true;
+        function makeYellow()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="yellow";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+</script>
+
 </head>
 
 <body bgcolor="#77DD77">
@@ -43,19 +71,21 @@ var bgToggle=true;
 
 <form>
 
+<center>
 <form name=red>
         <input type=button value="Red" onclick="makeRed();">
-      </form>
-
+     
 <form name=green>
         <input type=button value="Green" onclick="makeGreen();">
-      </form>
+      
+<form name=blue>
+        <input type=button value="Blue" onclick="makeBlue();">
 
+<form name=yellow>
+        <input type=button value="Yellow" onclick="makeYellow();">
+</center>
 
-
-
-
-
+<br><br>
 <button type="button">Submit</button>
 <button type="reset" value="Reset">Reset</button>
 </form>
