@@ -1,0 +1,147 @@
+<!-- Rowan Ging 11/13/2022 IT 105:01 Assignment 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IT 105:01 Assignment 7</title>
+
+<script>
+var bgToggle=true;
+        function makeRed()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="red";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeGreen()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="green";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeBlue()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="blue";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeYellow()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="yellow";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+</script>
+
+
+
+
+
+<script>
+        function add()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value); 
+        }
+  
+        function subtract()
+        {
+          document.querySelector("#full").value
+         = parseFloat(document.querySelector("#first").value)
+         + parseFloat(document.querySelector("#second").value); 
+        }
+</script>
+
+
+
+
+
+<script>
+        function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value );
+           for (i=1; i<=N; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+        }
+</script>
+
+
+
+
+
+
+
+
+</head>
+
+<body bgcolor="#77DD77">
+
+<center>
+<u><H2>IT 105:01 Principles of Programming</H2></u>
+<p><font size="+1"><strong>Assignment 7 - More Javascript</strong></font></p>
+</center>
+
+<form>
+
+<center><H3>Choose your favorite background color</H3>
+<input type=button value="Red" onclick="makeRed();"> 
+<input type=button value="Green" onclick="makeGreen();">
+<input type=button value="Blue" onclick="makeBlue();">
+<input type=button value="Yellow" onclick="makeYellow();">
+
+<center><H3>Calculator</H3>
+<input type=text id="first">
+<input type=button value="Addtion, +" onclick="add();">
+<input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+<input type=text id="full"><br><br>
+
+<input type=text id="first">
+<input type=button value="Subtraction, -" onclick="subtract();">
+<input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
+<input type=text id="full">
+
+<center><H3>Summation</H3>
+Enter an integer to sum to: <input type=text id="N"><br>
+        <input type=button value="Start the Sum" onclick="doSum();">
+        <div id="sumHere">
+          Your sum is: 
+        </div>
+
+
+
+
+
+
+
+<br><br>
+<button type="reset" value="Reset">Reset</button>
+</form>
+</center>
+
+</body>
+</html>
