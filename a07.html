@@ -70,6 +70,18 @@ var bgToggle=true;
         }
 </script>
 
+<script>
+        function doSum()
+        {
+           var sum=0;
+           var N = parseInt( document.querySelector("#N").value );
+           for (i=1; i<=N; i++) {
+             sum += i;
+           }
+           document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+        }
+      </script>
+
 </head>
 
 <body bgcolor="#77DD77">
@@ -96,10 +108,14 @@ var bgToggle=true;
 <input type=text id="first">
 <input type=button value="Subtraction, -" onclick="subtract();">
 <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
-<input type=text id="full"><br>
+<input type=text id="full">
 
-
-
+<center><H3>Summation</H3>
+Enter an integer to sum to: <input type=text id="N"><br>
+        <input type=button value="Start the Sum" onclick="doSum();">
+        <div id="sumHere">
+          Your sum is: 
+        </div>
 
 
 <br><br>
