@@ -82,14 +82,10 @@ var bgToggle=true;
          = parseFloat(document.querySelector("#first").value)
          / parseFloat(document.querySelector("#second").value); 
         }
-</script>
 
+~
 
-
-
-
-<script>
-        function doSum()
+	function doSum()
         {
            var sum=0;
            var N = parseInt( document.querySelector("#N").value );
@@ -99,14 +95,6 @@ var bgToggle=true;
            document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
         }
 </script>
-
-
-
-
-
-
-
-
 </head>
 
 <body bgcolor="#77DD77">
@@ -125,7 +113,6 @@ var bgToggle=true;
 <input type=button value="Yellow" onclick="makeYellow();">
 
 
-
 <H3>Calculator</H3>
 <input type=text id="first">
 <input type=button value="Addtion, +" onclick="add();">
@@ -134,7 +121,6 @@ var bgToggle=true;
 <input type=button value="Division, /" onclick="divide();">
 <input type=text id="second"> &nbsp; &nbsp; &nbsp; = &nbsp; &nbsp; &nbsp;
 <input type=text id="full"><br><br>
-
 
 
 <H3>Summation</H3>
@@ -146,14 +132,22 @@ Enter an integer to sum to: <input type=text id="N"><br>
 
 
 
-
+public class Demo {
+   public static void main(String[] args) {
+      int sum = 0;
+      int n = 50;
+      for (int i = 1; i <= n; i++) {
+         sum = sum + i;
+      } 
+      System.out.println("The Sum Of " + n + "is" + sum);
+   }
+}
 
 
 
 <br><br>
 <button type="reset" value="Reset">Reset</button>
 </form>
-
 
 </body>
 </html>
