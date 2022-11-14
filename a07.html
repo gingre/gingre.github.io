@@ -88,10 +88,11 @@ var bgToggle=true;
 <script>
 
 	function doSum()
+          var sum=0;
         
-           var sum=parseInt( document.querySelector("#R").value);
-           var N = parseInt( document.querySelector("#N").value );
-           for (i=1; i<=N; i++) {
+           var start=parseInt( document.querySelector("#R").value);
+           var end = parseInt( document.querySelector("#N").value );
+           for (i=start; i<=end; i++) {
              sum += i;
            }
            document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
