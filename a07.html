@@ -90,8 +90,10 @@ var bgToggle=true;
 	function doSum()
           var sum=0;
         
-           var start = parseInt( document.querySelector("#R").value);
+           var start=parseInt( document.querySelector("#R").value);
+           alert(start);
            var end = parseInt( document.querySelector("#N").value );
+           alert(end);
            for (i=start; i<=end; i++) {
              sum += i;
            }
