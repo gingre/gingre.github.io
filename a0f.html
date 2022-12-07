@@ -20,6 +20,20 @@ document.querySelector("#changeText").innerHTML = "Hi "+ document.querySelector(
 }
 </script>
 
+<script>
+var bgToggle=true;
+function makeRed()
+{
+if (bgToggle) {
+document.querySelector('body').style.backgroundColor="red";
+bgToggle=false;
+} else {
+document.querySelector('body').style.backgroundColor="white";
+bgToggle=true;
+}
+}
+</script>
+
 <style>
 body {
   font-family: Arial;
@@ -71,6 +85,9 @@ hr {
 <body bgcolor="#77DD77">
 
 <center>
+
+<input type=button value="Click to set background to LADYBUG RED" onclick="makeRed();">
+
 <H2>Want to contribute your skills to a delicious cause?</H2>
 <H1>APPLY NOW RIGHT HERE</H1>
 
